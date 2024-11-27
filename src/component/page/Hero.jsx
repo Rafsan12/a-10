@@ -1,12 +1,13 @@
 import React from "react";
-import Containerbox from "../material/Containerbox";
-import Signupbutton from "../material/Signupbutton";
+import ContainerBox from "../../material/Containerbox";
+import SignupButton from "../../material/Signupbutton";
+
 class Hero extends React.PureComponent {
   render() {
     return (
       <>
         <section className="bg-[url(../hero.svg)] pe-3 md:pe-0  bg-right-top object-cover w-screen bg-no-repeat lg:bg-center">
-          <Containerbox
+          <ContainerBox
             className={
               "py-20 md:py-24  grid place-items-center md:place-items-start "
             }
@@ -25,9 +26,9 @@ class Hero extends React.PureComponent {
                 contact.
               </p>
 
-              <Signupbutton>Sign Up for the Beta</Signupbutton>
+              <SignupButton>Sign Up for the Beta</SignupButton>
             </div>
-          </Containerbox>
+          </ContainerBox>
         </section>
       </>
     );

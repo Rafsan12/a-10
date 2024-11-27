@@ -1,7 +1,8 @@
 import React from "react";
-import Containerbox from "../material/Containerbox";
-import { trainData } from "../../../lib/data";
+
 import { CheckCircle } from "lucide-react";
+import { trainData } from "../../../lib/data";
+import ContainerBox from "../../material/Containerbox";
 // train list data destructuring
 const [list1, list2, list3, list4] = trainData.listdata;
 class Train extends React.PureComponent {
@@ -9,7 +10,7 @@ class Train extends React.PureComponent {
     return (
       <>
         <section className="px-3 ">
-          <Containerbox
+          <ContainerBox
             className={
               "bg-[url(../trainbg.svg)] bg-left-top bg-cover bg-no-repeat w-full rounded-[24px]  border border-primary/10 py-24 lg:py-28 "
             }
@@ -44,7 +45,7 @@ class Train extends React.PureComponent {
                 </p>
               </div>
             </div>
-          </Containerbox>
+          </Container>
         </section>
       </>
     );

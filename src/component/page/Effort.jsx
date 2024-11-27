@@ -1,12 +1,11 @@
-
-import Containerbox from "../material/Containerbox";
-import { effortData } from "../../../lib/data";
 import CountUp from "react-countup";
+import { effortData } from "../../../lib/data";
+import ContainerBox from "../../material/Containerbox";
 const Effort = () => {
   return (
     <>
       <section className="px-3">
-        <Containerbox
+        <ContainerBox
           className={
             "bg-[url(../effortbg.svg)] bg-right-top bg-cover lg:bg-center  bg-no-repeat w-full   px-6 py-8 lg:pb-24 lg:px-16  lg:pt-[68px]"
           }
@@ -45,7 +44,7 @@ const Effort = () => {
               </div>
             </div>
           </div>
-        </Containerbox>
+        </ContainerBox>
       </section>
     </>
   );

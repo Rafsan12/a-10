@@ -1,5 +1,3 @@
-import { sliderData } from "../../../lib/data";
-
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -7,6 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { sliderData } from "../../../lib/data";
 import ContainerBox from "../../material/Containerbox";
 import SliderCard from "../../material/Slidercard";
 

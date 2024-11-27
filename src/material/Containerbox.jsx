@@ -1,5 +1,6 @@
+import { cn } from "../../lib/cn";
+
 /* eslint-disable react/prop-types */
-import { cn } from "../../../lib/cn";
 
 export default function ContainerBox({ children, className }) {
   return (

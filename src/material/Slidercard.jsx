@@ -1,6 +1,6 @@
 import { cn } from "../../../lib/cn";
 
-const Slidercard = (props) => {
+export default function SliderCard(props) {
   const { id, icon, des, name, position, className } = props || {};
   return (
     <>
@@ -21,11 +21,11 @@ const Slidercard = (props) => {
           <h5 className="text-primary text-2xl font-semibold font-worksans">
             {name}
           </h5>
-          <p className="font-worksans text-xl font-normal text-white/75">{position}</p>
+          <p className="font-worksans text-xl font-normal text-white/75">
+            {position}
+          </p>
         </div>
       </div>
     </>
   );
-};
-
-export default Slidercard;
+}

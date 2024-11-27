@@ -3,6 +3,7 @@ import React from "react";
 import { CheckCircle } from "lucide-react";
 import { trainData } from "../../../lib/data";
 import ContainerBox from "../../material/Containerbox";
+
 // train list data destructuring
 const [list1, list2, list3, list4] = trainData.listdata;
 class Train extends React.PureComponent {
@@ -45,7 +46,7 @@ class Train extends React.PureComponent {
                 </p>
               </div>
             </div>
-          </Container>
+          </ContainerBox>
         </section>
       </>
     );

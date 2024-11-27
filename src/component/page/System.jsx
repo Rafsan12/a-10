@@ -1,8 +1,6 @@
-import Systemcard from "../material/Systemcard";
-import { WandSparkles } from "lucide-react";
-import { GitFork } from "lucide-react";
-import { Shrink } from "lucide-react";
-import Containerbox from "../material/Containerbox";
+import { GitFork, Shrink, WandSparkles } from "lucide-react";
+import ContainerBox from "../../material/Containerbox";
+import SystemCard from "../../material/Systemcard";
 
 // bestSystem data
 const bestSystem = [
@@ -30,13 +28,13 @@ const System = () => {
   return (
     <>
       <section className="py-28 ">
-        <Containerbox>
+        <ContainerBox>
           <div className="grid gap-x-6 grid-cols-1 md:grid-cols-2 gap-y-5 lg:grid-cols-3">
             {bestSystem.map((res) => (
-              <Systemcard className={'border'} key={res.id} {...res} />
+              <SystemCard className={"border"} key={res.id} {...res} />
             ))}
           </div>
-        </Containerbox>
+        </ContainerBox>
       </section>
     </>
   );

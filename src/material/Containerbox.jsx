@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import { cn } from "../../../lib/cn";
 
-const Containerbox = ({ children, className }) => {
+export default function ContainerBox({ children, className }) {
   return (
     <>
       <div className={cn(" max-w-screen-xl mx-auto px-3 lg:px-4  ", className)}>
@@ -8,6 +9,4 @@ const Containerbox = ({ children, className }) => {
       </div>
     </>
   );
-};
-
-export default Containerbox;
+}

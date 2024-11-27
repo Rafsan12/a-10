@@ -1,19 +1,20 @@
-import Containerbox from "../material/Containerbox";
 import { sliderData } from "../../../lib/data";
-import Slidercard from "../material/Slidercard";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { ArrowRight, ArrowLeft } from "lucide-react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import ContainerBox from "../../material/Containerbox";
+import SliderCard from "../../material/Slidercard";
 
 const Slider = () => {
   return (
     <>
       <section className="px-3 py-20 lg:py-28">
-        <Containerbox className={"relative max-w-screen-lg "}>
+        <ContainerBox className={"relative max-w-screen-lg "}>
           <Swiper
             grabCursor={true}
             loop={true}
@@ -37,7 +38,7 @@ const Slider = () => {
           >
             {sliderData.map((res, i) => (
               <SwiperSlide key={i}>
-                <Slidercard className={" mx-auto"} key={res.id} {...res} />
+                <SliderCard className={" mx-auto"} key={res.id} {...res} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -57,7 +58,7 @@ const Slider = () => {
           <br />
           <br />
           <div className="swiper-pagination"></div>
-        </Containerbox>
+        </ContainerBox>
       </section>
     </>
   );

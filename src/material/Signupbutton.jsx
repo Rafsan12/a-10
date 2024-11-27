@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Button } from "@nextui-org/react";
 import { SquareArrowUpRight } from "lucide-react";
-import { cn } from "../../../lib/cn";
+import { cn } from "../../lib/cn";
 
 export default function SignupButton({ children, className }) {
   return (
